@@ -2,13 +2,13 @@ package com.baozi.demo.activity
 
 import android.graphics.Rect
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.PagerAdapter
-import android.support.v4.view.ViewPager
-import android.support.v4.widget.SwipeRefreshLayout
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.core.content.ContextCompat
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -54,7 +54,8 @@ class TestActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener {
     }
 
     private fun initRv() {
-        rv_content.layoutManager = LinearLayoutManager(this)
+        rv_content.layoutManager =
+            LinearLayoutManager(this)
         rv_content.adapter = adapter
         adapter.setLoadMore(object : LoadingWrapper.LoadMoreItem(this) {
             override fun getLoadMoreLayout(): Int = 0
@@ -109,7 +110,11 @@ class TestItemGroup : TreeItem<String>() {
         val view = viewHolder.getView<RecyclerView>(R.id.rv_images)
         val vp_content = viewHolder.getView<ViewPager>(R.id.vp_content)
 
-        view.layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.HORIZONTAL, false)
+        view.layoutManager = LinearLayoutManager(
+            view.context,
+            LinearLayoutManager.HORIZONTAL,
+            false
+        )
         if (view.adapter == null) {
             view.adapter = adapter;
         }

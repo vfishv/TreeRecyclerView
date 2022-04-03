@@ -3,9 +3,9 @@ package com.baozi.demo.fragment
 import android.graphics.Color
 import android.graphics.Rect
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,7 +50,8 @@ class MineFg : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         //初始化recyclerView
-        rv_content.layoutManager = GridLayoutManager(view!!.context, 4)
+        rv_content.layoutManager =
+            GridLayoutManager(view!!.context, 4)
         rv_content.adapter = adapter
         adapter.itemManager.apply {
             clean()

@@ -3,10 +3,10 @@ package com.baozi.demo.fragment
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,8 +36,10 @@ abstract class SimpleRecyclerViewFg<T : BaseRecyclerAdapter<*>> : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        recyclerView!!.itemAnimator = DefaultItemAnimator()
-        recyclerView!!.layoutManager = LinearLayoutManager(context)
+        recyclerView!!.itemAnimator =
+            DefaultItemAnimator()
+        recyclerView!!.layoutManager =
+            LinearLayoutManager(context)
         recyclerView!!.adapter = adapter
     }
 }

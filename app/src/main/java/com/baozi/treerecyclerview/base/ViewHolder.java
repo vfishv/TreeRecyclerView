@@ -7,8 +7,8 @@ import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.v7.widget.RecyclerView;
-import android.text.util.Linkify;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,11 +19,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
-
-import com.baozi.treerecyclerview.item.SimpleTreeItem;
-
-import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
     private SparseArray<View> mViews;

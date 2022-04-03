@@ -3,12 +3,12 @@ package com.baozi.demo.activity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.StaggeredGridLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver
@@ -40,7 +40,8 @@ class CityAt : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_rv_content)
         rv_content?.apply {
-            layoutManager = GridLayoutManager(context, 6)
+            layoutManager =
+                GridLayoutManager(context, 6)
             itemAnimator = DefaultItemAnimator()
             adapter = treeRecyclerAdapter
         }

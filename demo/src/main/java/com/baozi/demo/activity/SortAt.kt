@@ -1,9 +1,9 @@
 package com.baozi.demo.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.widget.TextView
 
 import com.baozi.demo.R
@@ -34,7 +34,8 @@ class SortAt : AppCompatActivity() {
         qb_sort.setIndexs(LETTERS)
         qb_sort.setSelectedIndexTextView(tv_index)
 
-        mLinearLayoutManager = LinearLayoutManager(this)
+        mLinearLayoutManager =
+            LinearLayoutManager(this)
         rv_content.layoutManager = mLinearLayoutManager
         rv_content.adapter = mTreeSortAdapter
         initData()

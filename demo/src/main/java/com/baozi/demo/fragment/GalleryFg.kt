@@ -2,9 +2,9 @@ package com.baozi.demo.fragment
 
 import android.graphics.Rect
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.LinearSnapHelper
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import android.widget.TextView
 
@@ -41,7 +41,8 @@ class GalleryFg : SimpleRecyclerViewFg<TreeRecyclerAdapter>() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        linearLayoutManager = LinearLayoutManager(context, 0, false)
+        linearLayoutManager =
+            LinearLayoutManager(context, 0, false)
         recyclerView!!.layoutManager = linearLayoutManager
         snapHelper.attachToRecyclerView(recyclerView)
         recyclerView!!.addOnScrollListener(object : RecyclerView.OnScrollListener() {

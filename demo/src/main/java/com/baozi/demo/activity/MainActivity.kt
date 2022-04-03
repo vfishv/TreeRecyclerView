@@ -3,10 +3,10 @@ package com.baozi.demo.activity
 import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.util.Pair
 import android.view.View
 import android.widget.Toast
@@ -86,7 +86,8 @@ class MainActivity : AppCompatActivity() {
      */
     private fun initRecyclerVIew() {
         rv_content?.apply {
-            layoutManager = LinearLayoutManager(context)
+            layoutManager =
+                LinearLayoutManager(context)
             adapter = _adapter
             addItemDecoration(object : RecyclerView.ItemDecoration() {
                 override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {

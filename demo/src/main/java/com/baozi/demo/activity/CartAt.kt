@@ -1,9 +1,9 @@
 package com.baozi.demo.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.widget.CheckBox
 import android.widget.TextView
 
@@ -27,7 +27,8 @@ class CartAt : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shopping_cart)
-        rv_content.layoutManager = LinearLayoutManager(this)
+        rv_content.layoutManager =
+            LinearLayoutManager(this)
         rv_content.adapter = adapter
         val beans = ArrayList<CartBean>()
         beans.add(CartBean(3))

@@ -1,10 +1,10 @@
 package com.baozi.demo.fragment
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 import com.baozi.demo.R
 import com.baozi.demo.fragment.SimpleRecyclerViewFg
@@ -27,7 +27,8 @@ class NewsFg : SimpleRecyclerViewFg<TreeRecyclerAdapter>() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        recyclerView?.layoutManager = GridLayoutManager(context, 6)
+        recyclerView?.layoutManager =
+            GridLayoutManager(context, 6)
         recyclerView?.adapter = adapter
         val list = ArrayList<NewsItemBean>()
         for (i in 0..4) {

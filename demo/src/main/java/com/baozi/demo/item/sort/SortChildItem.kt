@@ -1,7 +1,7 @@
 package com.baozi.demo.item.sort
 
 import android.graphics.Rect
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 
 import com.baozi.demo.R
 import com.baozi.treerecyclerview.base.ViewHolder
