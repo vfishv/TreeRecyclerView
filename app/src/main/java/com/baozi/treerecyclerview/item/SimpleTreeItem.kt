@@ -31,7 +31,7 @@ class SimpleTreeItem @JvmOverloads constructor(val layout: Int = 0, spanSize: In
 
     override fun getItemOffsets(outRect: Rect, layoutParams: RecyclerView.LayoutParams, position: Int) {
         treeOffset ?: return
-        outRect.set(treeOffset)
+        outRect.set(treeOffset!!)
     }
 
     override fun getSpanSize(maxSpan: Int): Int {
