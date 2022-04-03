@@ -9,18 +9,19 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.baozi.demo.activity.MainActivity"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CityAt" />
-        <activity android:name=".activity.SortAt" />
-        <activity android:name=".activity.SwipeSortAt" />
-        <activity android:name=".activity.CartAt" />
-        <activity android:name=".activity.TBActivity" />
-        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".activity.CityAt" android:exported="false" />
+        <activity android:name=".activity.SortAt" android:exported="false" />
+        <activity android:name=".activity.SwipeSortAt" android:exported="false" />
+        <activity android:name=".activity.CartAt" android:exported="false" />
+        <activity android:name=".activity.TBActivity" android:exported="false" />
+        <activity android:name=".activity.TestActivity" android:exported="false" />
     </application>
 </manifest>
