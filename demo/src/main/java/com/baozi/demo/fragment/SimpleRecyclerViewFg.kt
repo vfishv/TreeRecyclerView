@@ -21,7 +21,7 @@ abstract class SimpleRecyclerViewFg<T : BaseRecyclerAdapter<*>> : Fragment() {
     protected var mContext: Context? = null
     protected open var adapter = TreeRecyclerAdapter()
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         this.mContext = context
     }
