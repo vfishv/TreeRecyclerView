@@ -1,11 +1,8 @@
 package com.baozi.demo.item.city;
 
-import android.graphics.Rect;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
 
 import com.baozi.demo.R;
-import com.baozi.treerecyclerview.annotation.TreeItemType;
 import com.baozi.treerecyclerview.base.ViewHolder;
 import com.baozi.treerecyclerview.item.TreeItem;
 
