@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TreeRecyclerView.iml" filepath="$PROJECT_DIR$/.idea/modules/TreeRecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TreeRecyclerView.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/TreeRecyclerView.demo.unitTest.iml" />
+    </modules>
+  </component>
+</project>
